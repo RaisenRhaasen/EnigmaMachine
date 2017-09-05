@@ -28,7 +28,6 @@ int main()
     int count = 0;
     for(count = 0; temp[count] != '\0'; count++);
     
-//    cout << count << endl;
     int code[count];
     for(int i = 0; i < count; i++) {
             code[i] = (temp[i] - 'a')%26;
@@ -39,12 +38,6 @@ int main()
             reflector[i] = reflect[i] - 'A';
             plug[i] = plugtemp[i] - 'A';
     }
-/*    
-    cout << "Pos3: " << pos.Pos3() << endl;
-    cout << "Pos2: " << pos.Pos2() << endl;
-    cout << "Pos1: " << pos.Pos1() << endl;
-    */
-//    cout << code[0] << endl;
     
     for(int i = 0; i < count; i++) {
             pos.Step();
